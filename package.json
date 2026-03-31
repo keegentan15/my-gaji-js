@@ -1,0 +1,45 @@
+{
+  "name": "my-gaji-js",
+  "version": "1.0.0",
+  "description": "Malaysian statutory payroll deductions (EPF/KWSP, SOCSO/PERKESO, EIS/SIP) — 2026 rules",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "malaysia",
+    "payroll",
+    "epf",
+    "kwsp",
+    "socso",
+    "perkeso",
+    "eis",
+    "sip",
+    "statutory"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
