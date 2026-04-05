@@ -1,5 +1,5 @@
 {
-  "name": "my-gaji-js",
+  "name": "@keegentan/my-gaji-js",
   "version": "1.0.0",
   "description": "Malaysian statutory payroll deductions (EPF/KWSP, SOCSO/PERKESO, EIS/SIP) — 2026 rules",
   "type": "module",
